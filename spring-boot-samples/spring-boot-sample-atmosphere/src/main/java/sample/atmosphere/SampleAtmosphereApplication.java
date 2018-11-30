@@ -48,6 +48,7 @@ public class SampleAtmosphereApplication {
 	public ServletRegistrationBean atmosphereServlet() {
 		// Dispatcher servlet is mapped to '/home' to allow the AtmosphereServlet
 		// to be mapped to '/chat'
+		// Some thing entered by Boda
 		ServletRegistrationBean registration = new ServletRegistrationBean(
 				new AtmosphereServlet(), "/chat/*");
 		registration.addInitParameter("org.atmosphere.cpr.packages", "sample");
